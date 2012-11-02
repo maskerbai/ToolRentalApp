@@ -1,0 +1,86 @@
+﻿<%@ Master Language="VB" CodeFile="tool.master.vb" Inherits="tool" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="~/css/toolrental.css" /> 
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+    <div id="wrap">
+        <div id="header">
+            <div id="logo"> <img alt="SLTR logo" src="http://instruct.biz.uiowa.edu/courses/6K183/6K183_group00/css/graphics/logo1.png" /> </div>
+            <div id="title"> <h1>South Liberty Tool Rental</h1>321 Main St., South Liberty, IA 12345&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <a href="http://maps.google.com/maps?hl=en&ie=UTF8&q=iowa+city+public+library&fb=1&gl=us&hq=iowa+city+public+library&hnear=iowa+city+public+library&view=map&cid=10494728181523755767&ved=0CH8QpQY&ei=2zbUTNIEloA129WJ_g0&ll=41.660441,-91.531777&spn=0.007294,0.021136&z=16"> (map) </a><br /><br />(319) 555.1212 <br /><br />  </div>
+            <div id="logo"> <img alt="SLTR logo" src="http://instruct.biz.uiowa.edu/courses/6K183/6K183_group00/css/graphics/logo2.png" /> </div>
+                                         
+                <br clear="all" />
+
+       <!-- Close the header div -->
+       </div>
+
+       <div id="menubar">
+            
+            <div id="loginbox"> 
+
+                <asp:LoginStatus ID="LoginStatus1" runat="server" /> </div>
+                
+            <div id="nav"> 
+    
+                <asp:Menu ID="Menu1" runat="server" 
+                                DataSourceID="SiteMapDataSource1" DynamicHorizontalOffset="2" Orientation="Horizontal" RenderingMode="table"
+                                StaticSubMenuIndent="10px">
+                                <StaticMenuStyle CssClass="StaticMenu" />
+                                <DynamicHoverStyle cssclass="DynamicHoverStyle" />
+                                <DynamicMenuItemStyle cssclass="DynamicMenuItemStyle" />
+                                <DynamicMenuStyle cssclass="DynamicMenuStyle" />
+                                <DynamicSelectedStyle cssclass="DynamicSelectedStyle" />
+                                <StaticHoverStyle cssclass="StaticHoverStyle"  />
+                                <StaticMenuItemStyle cssclass="StaticMenuItemStyle" />
+                                <StaticSelectedStyle cssclass="StaticSelectedStyle" />
+                 </asp:Menu>
+
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" />
+          <!-- Close the nav div -->
+          </div> 
+                
+          <div id="date">
+                       
+                <asp:Label ID="lbl_date" runat="server" Text="Label"></asp:Label> 
+                
+           <!-- Close the date div -->
+           </div>   
+                
+                <br clear="all" />
+                
+        <!-- Close the menubar div -->
+        </div>
+            
+                    
+        <div id="main"> 
+        
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+         <!-- Close the main div -->
+        </div>
+                           
+                        
+         <div id="footer"> 
+            
+            <p>Copyright &#169; <asp:Label ID="lbl_copy" runat="server" Text="Label"></asp:Label> South Liberty Tool Rental</p>
+  
+         <!-- Close the footer div -->
+         </div>
+ 
+  <!-- Close the wrap div -->
+  </div>
+
+    </div>
+    </form>
+</body>
+</html>

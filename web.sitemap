@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+
+  <siteMapNode url="" title="" description="">
+    <siteMapNode url="~/default.aspx" title="Home"></siteMapNode>
+    
+        <siteMapNode url="~/admin/default.aspx" title="Admin"  description="" >
+          <siteMapNode url="~/admin/AddNewTool.aspx" title="Add A New Tool" description="" />
+          <siteMapNode url="~/admin/ViewAllTools.aspx" title="View All Tools" description="" />
+        </siteMapNode>
+
+        <siteMapNode url="~/sales/default.aspx" title="Sales"  description="" >
+          
+          <siteMapNode url="~/sales/AddNewCustomer.aspx" title="Add A New Customer" description="" />
+          <siteMapNode url="~/sales/ViewAllCustomers.aspx" title="View All Customers" description="" />
+          <siteMapNode url="~/sales/ViewAllTools.aspx" title="View All Tools" description="" />
+          <siteMapNode url="~/sales/ViewAllRentals.aspx" title="View All Rentals" description="" />
+          <siteMapNode url="~/sales/RentTool.aspx" title="Rent a Tool" description="" />
+          <siteMapNode url="~/sales/ReturnTool.aspx" title="Return a Tool" description="" />
+          <siteMapNode url="~/sales/ToolsDueToday.aspx" title="Tools Due Today" description="" />
+        </siteMapNode>
+
+
+        <siteMapNode url="~/customer/default.aspx" title="Customer"  description="" >
+
+        </siteMapNode>
+
+  </siteMapNode>
+  
+</siteMap>
