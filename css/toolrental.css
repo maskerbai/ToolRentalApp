@@ -1,14 +1,8 @@
 ﻿html {margin:0; padding:0; color:#000;}
 
-body { background-color:lime; text-align:center;}
+body { background-color:lime; }
 
 .center { text-align:center; }
-
-table.center { margin-left:auto; margin-right:auto; }
-
-h2.center { text-align:center; }
-
-.rfd { color:Red; font-style:italic; font-weight:bold; }
 
 .deletedrecordhighlight { color:Green; font-style:italic; font-weight:bold; text-decoration:underline; }
 
